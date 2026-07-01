@@ -1,0 +1,108 @@
+.nuur {
+  width: 2000px;
+  height: 2000px;
+  background-color: lightblue;
+  position: relative;
+}
+.box1 {
+  width: 200px;
+  height: 150px;
+  position: absolute;
+  top: 300px;
+  left: 200px;
+}
+.box2 {
+  width: 200px;
+  height: 150px;
+  position: absolute;
+  top: 200px;
+  left: 700px;
+}
+.box3 {
+  width: 200px;
+  height: 150px;
+  position: absolute;
+  top: 300px;
+  left: 1200px;
+}
+.cinnamon {
+  width: 150px;
+  height: 80px;
+  position: absolute;
+  top: 115px;
+  left: 60px;
+  z-index: 0;
+  opacity: 0;
+}
+.kuromi {
+  width: 80px;
+  height: 90px;
+  position: absolute;
+  top: 120px;
+  left: 90px;
+  z-index: 0;
+  opacity: 0;
+}
+.kitty {
+  width: 80px;
+  height: 90px;
+  position: absolute;
+  top: 120px;
+  left: 80px;
+  z-index: 0;
+  opacity: 0;
+}
+.box11 {
+  width: 250px;
+  height: 200px;
+  z-index: 1;
+}
+.box22 {
+  width: 250px;
+  height: 200px;
+  z-index: 2;
+}
+.box33 {
+  width: 250px;
+  height: 200px;
+  z-index: 3;
+}
+@keyframes boroo {
+  0% {
+    transform: translateY(0);
+  }
+  25% {
+    /* transform: rotate(90deg) translateY(100px); */
+    transform: translateY(150px) rotate(90deg);
+  }
+  50% {
+    /* transform: rotate(180deg) translateY(200px); */
+    transform: translateY(300px) rotate(180deg);
+  }
+  75% {
+    /* transform: rotate(270deg) translateY(300px); */
+    transform: translateY(450px) rotate(270deg);
+  }
+  100% {
+    /* transform: rotate(360deg) translateY(400px); */
+    transform: translateY(600px) rotate(360deg);
+  }
+}
+.box1:hover .cinnamon {
+  animation: boroo 2s ease-in infinite;
+  position: absolute;
+  opacity: 1;
+  z-index: 0;
+}
+.box2:hover .kuromi {
+  animation: boroo 2s ease-in;
+  position: absolute;
+  opacity: 1;
+  z-index: 0;
+}
+.box3:hover .kitty {
+  animation: boroo 2s ease-in;
+  position: absolute;
+  opacity: 1;
+  z-index: 0;
+}
